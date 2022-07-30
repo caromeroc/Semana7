@@ -15,12 +15,15 @@ public class Lanzadora {
         ConsultasHibernate objCH = new ConsultasHibernate();
         Vendedores objV2 =  new Vendedores(1964, "aaa", "aaa", "aaa");
         Vehiculos objVehi = new Vehiculos("ACD 427", "", "", 0);
+        objVehi.setDocumentoVendedor(objV2);
+        
         
         //objCH.insertVendedor();
         
-        objCH.deleteVendedor(objV2);
+       
         objCH.deleteVehiculo(objVehi);
+        objCH.deleteVendedor(objV2);
         
-        objCH.selectAllHibernateVendedor();
+        //objCH.selectAllHibernateVendedor();
     }  
 }

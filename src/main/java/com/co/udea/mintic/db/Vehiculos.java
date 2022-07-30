@@ -60,6 +60,7 @@ public class Vehiculos implements Serializable {
         this.marca = marca;
         this.modelo = modelo;
         this.kilometraje = kilometraje;
+       
     }
 
     public String getPlaca() {
